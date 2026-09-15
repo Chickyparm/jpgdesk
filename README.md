@@ -1,2 +1,1 @@
-# jpgdesk
-JpgDesk — local JPG to PDF. Nothing uploaded.
+JpgDesk — convert JPG to PDF in the browser. Live: https://chickyparm.github.io/jpgdesk/

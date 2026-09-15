@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compress JPG — JpgDesk</title>
+  <meta name="description" content="Compress a JPG in the browser. Nothing is uploaded." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <div class="grid-bg"></div>
+  <header class="nav" id="site-nav"></header>
+
+  <main class="page wrap tool-shell">
+    <div class="eyebrow">Compressor</div>
+    <h2>Smaller JPG.<br>Same machine.</h2>
+    <p class="lede">Quality slider. Preview before download. Free lead-in to the paid converter.</p>
+
+    <div class="controls">
+      <label class="meter" style="margin-left:0">Quality <strong id="qLabel">80%</strong></label>
+      <input class="range" id="quality" type="range" min="40" max="95" value="80" />
+      <div class="meter" id="stats"></div>
+    </div>
+
+    <div class="drop" id="drop">
+      <div>
+        <strong>Drop a JPG</strong>
+        <p>or click to choose</p>
+      </div>
+    </div>
+    <input id="fileInput" type="file" accept="image/jpeg,image/jpg,image/png,image/webp" hidden />
+    <img id="preview" alt="" style="display:none;margin:24px 0;max-height:420px;border:1px solid #2a2c32" />
+    <button class="btn btn-solid" id="downloadBtn" disabled>Download JPG</button>
+    <p class="lede">Need a multi-page packet instead? <a href="convert.html" style="border-bottom:1px solid #fff">Convert to PDF</a>.</p>
+  </main>
+
+  <footer><div class="wrap foot" id="site-foot"></div></footer>
+  <script src="js/site.js"></script>
+  <script src="js/compress.js"></script>
+</body>
+</html>

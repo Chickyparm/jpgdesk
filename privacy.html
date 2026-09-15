@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy — JpgDesk</title>
+  <meta name="description" content="JpgDesk converts files in the browser. Images are not uploaded to our servers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <div class="grid-bg"></div>
+  <header class="nav" id="site-nav"></header>
+
+  <main class="page">
+    <section class="band-sm wrap" style="padding-top:80px">
+      <div class="eyebrow">Privacy</div>
+      <h2>The files stay<br>where you dropped them.</h2>
+      <p class="lede">Conversion and compression run in JavaScript on this device. Images are not posted to a JpgDesk server to build the PDF.</p>
+      <p class="lede">The free-quota counter lives in localStorage on this browser. That is a number, not your photos.</p>
+      <p class="lede">Hosting, analytics, and payment (when Stripe is connected) can see that a page was loaded. They do not see the image bytes unless you later add an upload path. Do not add one.</p>
+      <p class="lede">If you connect checkout, Stripe will hold billing identity. Keep that separate from the file pipeline.</p>
+      <a class="btn btn-solid" href="convert.html" style="margin-top:32px">Use the converter</a>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot" id="site-foot"></div></footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

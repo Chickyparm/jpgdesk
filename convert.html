@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convert JPG to PDF — JpgDesk</title>
+  <meta name="description" content="Drop JPGs. Build a PDF on this computer. Nothing is uploaded." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+  <div class="grid-bg"></div>
+  <header class="nav" id="site-nav"></header>
+
+  <main class="page wrap tool-shell">
+    <div class="eyebrow">Converter</div>
+    <h2>Drop photos.<br>Download one PDF.</h2>
+    <p class="lede">JPEG, PNG, WebP. Runs here. We never receive the files.</p>
+
+    <div class="controls">
+      <div class="seg">
+        <button type="button" data-paper="letter" class="on">Letter</button>
+        <button type="button" data-paper="a4">A4</button>
+      </div>
+      <div class="seg">
+        <button type="button" data-fit="fit" class="on">Fit</button>
+        <button type="button" data-fit="fill">Fill</button>
+      </div>
+      <div class="meter" id="meter"></div>
+    </div>
+
+    <div class="drop" id="drop">
+      <div>
+        <strong>Drop images</strong>
+        <p>or click to choose · stays on this device</p>
+      </div>
+    </div>
+    <input id="fileInput" type="file" accept="image/jpeg,image/jpg,image/png,image/webp" multiple hidden />
+    <div class="thumbs" id="thumbs"></div>
+    <button class="btn btn-solid" id="downloadBtn" disabled>Download PDF</button>
+  </main>
+
+  <div class="modal" id="paywall">
+    <div class="modal-card">
+      <div class="eyebrow">Quota</div>
+      <h3>Three free used.</h3>
+      <p>$7 a month unlocks unlimited local PDFs. No watermark. Cancel anytime. Stripe hook goes here when you wire billing.</p>
+      <a class="btn btn-sunset" href="pricing.html">Go unlimited</a>
+      <button class="btn btn-ghost" id="simPro" style="margin-top:10px">Mark this browser as Pro</button>
+      <button class="btn btn-ghost" id="closeModal" style="margin-top:10px">Close</button>
+    </div>
+  </div>
+
+  <footer><div class="wrap foot" id="site-foot"></div></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/convert.js"></script>
+</body>
+</html>
