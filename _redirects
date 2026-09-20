@@ -1,0 +1,4 @@
+/convert /jpg-to-pdf 301
+/convert.html /jpg-to-pdf 301
+/jpg-to-pdf.html /jpg-to-pdf 301
+/compress.html /compress-jpg 301
