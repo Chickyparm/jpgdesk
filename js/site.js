@@ -49,7 +49,7 @@
 })();
 
 window.JpgDesk = {
-  FREE_LIMIT: 3,
+  FREE_LIMIT: 1,
   used() {
     return Number(localStorage.getItem("jpgdesk_free_used") || 0);
   },
